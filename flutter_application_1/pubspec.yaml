@@ -23,8 +23,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  fonts:
-    - family: Spicy Rice
-      fonts:
-        - asset: fonts/SpicyRice-Regular.ttf
