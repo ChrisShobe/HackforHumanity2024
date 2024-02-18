@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/blueOrGreen.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'blueORgreen.dart';
 
 class NeedlesLeaves extends StatelessWidget {
   @override
@@ -175,7 +176,7 @@ class BlueOak2 extends StatelessWidget {
             height: 227.83,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const NetworkImage("https://via.placeholder.com/229x228"),
+                image: NetworkImage("https://s3-alpha-sig.figma.com/img/4e69/ee84/55121183ec74ccb08edf90921f149f5d?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcdrFx-9PY3NS~juo7VrVyeCTkE~U37-Xa66h8iC6XD15CdIQ~tePG9izT0NRd-ur1tV~MawTMK6lfGGRx4WED1PnLuaKGNdR~WLeP7o66psoX-e-mSHTS4RUQl3xRYbstCjFj78-f7WjsdIF2IstQu83T~-H1ES7TG9wXUVOd7YCyZR6nwSCI6qPYkUFbZXE~czw4HhqMulYsUrcmarBqUwKsohLq~euoCrcsA86fgxlMNYJ~q97NYpW~9FGJDq0o-o1m1cbqOgHLjOIR2SHmouDiNOPnyTr4BeD1l4aGTGB8luO~FDg-~W-1Z6WCArZt-Tlmsz0-eh5rU4vL5WfQ__"),
                 fit: BoxFit.cover,
               ),
             ),
