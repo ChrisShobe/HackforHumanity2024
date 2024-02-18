@@ -42,7 +42,7 @@ class ScaleNeedlesPage extends StatelessWidget {
                 child: Center(
                   child: SizedBox(
                     width: 285,
-                    height: 110,
+                    height: 160,
                     child: Center(
                       child: Text(
                         'Are the needles short and layered like scales?',
@@ -90,7 +90,7 @@ class ScaleNeedlesPage extends StatelessWidget {
               ),
               Positioned(
                 left: 140,
-                top: 250,
+                top: 260,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -119,12 +119,12 @@ class ScaleNeedlesPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 40,
-                top: 120,
+                left: 10,
+                top: -40,
                 child: Transform.translate(
                   offset: Offset(0.0, 0.0),
                   child: Transform.rotate(
-                    angle: 4.2,
+                    angle: 4.3,
                     child: Container(
                       width: 250,
                       height: 250,
@@ -139,12 +139,12 @@ class ScaleNeedlesPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 50,
-                top: 120,
+                left: 90,
+                top: -120,
                 child: Transform.translate(
                   offset: Offset(0.0, 0.0),
                   child: Transform.rotate(
-                    angle: 1.0,
+                    angle: 1.2,
                     child: Container(
                       width: 280,
                       height: 400,
