@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'bark.dart';
 
 class ScaleNeedlesPage extends StatelessWidget {
   const ScaleNeedlesPage({Key? key}) : super(key: key);
@@ -86,7 +87,10 @@ class ScaleNeedlesPage extends StatelessWidget {
                 top: 281,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add your logic here for 'Yes'
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BarkPage()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF639F32),
