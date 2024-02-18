@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/blueORgreen.dart';
+import 'package:flutter_application_1/softORpointy.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'softORpointy.dart';
 
 // hello
+//hello 
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -41,7 +44,7 @@ class WelcomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => BlueORGreenPage()),
+                          MaterialPageRoute(builder: (context) => SoftOrPointyPage()),
                         );
                   },
                   child: Text(
