@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'loginPage.dart';
-import 'welcomePage.dart';
-
+import 'blueOrGreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -84,7 +83,7 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => WelcomePage()),
+                          MaterialPageRoute(builder: (context) => BlueORGreenPage()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
@@ -94,7 +93,7 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       child: const Text(
-                        'Skip',
+                        'Start',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 15,

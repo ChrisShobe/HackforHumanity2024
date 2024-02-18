@@ -1,42 +1,12 @@
 import 'package:flutter/material.dart';
 import 'scaleNeedles.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Color of Berries'),
-        ),
-        body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => BlueORGreenPage()),
-              );
-            },
-            child: const Text('Go to Blue or Green Page'),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
 class BlueORGreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Blue or Green'),
+        title: const Text('Color of Berries'),
       ),
       body: Center(
         child: Container(
