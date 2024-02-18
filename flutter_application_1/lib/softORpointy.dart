@@ -58,7 +58,7 @@ class SoftOrPointyPage extends StatelessWidget {
 
               Positioned(
                 left: 125,
-                top: 416,
+                top: 430,
                 height: 50,
                 width: 120,
                 child: ElevatedButton(
@@ -93,7 +93,7 @@ class SoftOrPointyPage extends StatelessWidget {
 
               Positioned(
                 left: 125,
-                top: 281,
+                top: 300,
                 height: 50,
                 width: 120,
                 child: ElevatedButton(
@@ -128,7 +128,7 @@ class SoftOrPointyPage extends StatelessWidget {
               // Image Widget
               Positioned(
                 left: 110,
-                top: 220,
+                top: 200,
                 child: Transform(
                   transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(-0.43),
                   child: Container(
@@ -146,7 +146,7 @@ class SoftOrPointyPage extends StatelessWidget {
 
               Positioned(
                 left: -60,
-                top: 520,
+                top: 560,
                 child: Transform(
                   transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(-1.05),
                     child: Container(
