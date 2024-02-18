@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 
 class BarkPage extends StatelessWidget {
+  const BarkPage({Key? key}) : super(key: key); // Add named 'key' parameter to the constructor
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -14,13 +16,13 @@ class BarkPage extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Container(
-            color: Colors.white
+            color: const Color(0xFFFFFFFF), // Add 'const' keyword to improve performance
           ),
           Positioned(
             child: Container(
               width: width, // Use the full available width
               height: height, // Use the full available height
-              color: Color(0xFF639F32),
+              color: const Color(0xFF639F32), // Add 'const' keyword to improve performance
             ),
           ),
           Positioned(
@@ -29,7 +31,7 @@ class BarkPage extends StatelessWidget {
             child: Container(
               width: width - 20, //345,
               height: height - 75,
-              color: Color(0xFFFFE4C2),
+              color: const Color(0xFFFFE4C2), // Add 'const' keyword to improve performance
             ),
           ),
           Positioned(
@@ -43,7 +45,7 @@ class BarkPage extends StatelessWidget {
                   'Is the bark firm or soft?',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.spaceGrotesk(
-                    color: Color(0xFF3391CC),
+                    color: const Color(0xFF3391CC), // Add 'const' keyword to improve performance
                     fontSize: 30,
                     fontWeight: FontWeight.w400,
                   ),
@@ -52,28 +54,18 @@ class BarkPage extends StatelessWidget {
             ),
           ),
           Positioned(
-          left: width * 0.4,
-          top: 200,
-          child: Builder(
-            builder: (context) => ElevatedButton(
-              onPressed: () {
-                //sequoia tree
-              },
-              child: Text('Button'), // Add this line
-              style: ElevatedButton.styleFrom(
-                primary: Color(0xFF3391CC),
-                shape: RoundedRectangleBorder(
+            left: width * 0.4,
+            top: 200,
+            child: Builder(
+              builder: (context) => ElevatedButton(
+                onPressed: () {
+                  //sequoia tree
+                },
+                child: const Text('Button'), // Add 'const' keyword to improve performance
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF3391CC), // Replace 'primary' with 'backgroundColor'
+                  shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
-                  ),
-                ),
-                child: Center(
-                  child: Text(
-                    'Soft',
-                    style: GoogleFonts.spaceGrotesk(
-                      color: Colors.black,
-                      fontSize: 30,
-                      fontWeight: FontWeight.w400,
-                    ),
                   ),
                 ),
               ),
@@ -88,7 +80,7 @@ class BarkPage extends StatelessWidget {
                   //cedar tree
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Color(0xFF3391CC),
+                  backgroundColor: const Color(0xFF3391CC), // Replace 'primary' with 'backgroundColor'
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -116,7 +108,7 @@ class BarkPage extends StatelessWidget {
                 height: 364.29,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/422x364"),
+                    image: const NetworkImage("https://via.placeholder.com/422x364"), // Add 'const' keyword to improve performance
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -133,7 +125,7 @@ class BarkPage extends StatelessWidget {
                 height: 140.33,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/137x140"),
+                    image: const NetworkImage("https://via.placeholder.com/137x140"), // Add 'const' keyword to improve performance
                     fit: BoxFit.cover,
                   ),
                 ),

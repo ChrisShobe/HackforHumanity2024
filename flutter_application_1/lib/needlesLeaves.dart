@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/blueOrGreen.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'blueORgreen.dart';
+import 'blueOrGreen.dart';
 
 class NeedlesLeaves extends StatelessWidget {
+  const NeedlesLeaves({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -21,7 +22,7 @@ class NeedlesLeaves extends StatelessWidget {
             child: Container(
               width: width, // Use the full available width
               height: height, // Use the full available height
-              color: Color(0xFF639F32),
+              color: const Color(0xFF639F32),
             ),
           ),
           Positioned(
@@ -30,7 +31,7 @@ class NeedlesLeaves extends StatelessWidget {
             child: Container(
               width: width - 20, //345,
               height: height - 75,
-              color: Color(0xFFFFE4C2),
+              color: const Color(0xFFFFE4C2),
             ),
           ),
           Positioned(
@@ -42,7 +43,7 @@ class NeedlesLeaves extends StatelessWidget {
                   //Oak tree
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 14, 68, 5),
+                  backgroundColor: const Color.fromARGB(255, 14, 68, 5),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -71,7 +72,7 @@ class NeedlesLeaves extends StatelessWidget {
                   'Does your tree have needles or leaves?',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.spaceGrotesk(
-                    color: Color(0xFF1986A4),
+                    color: const Color(0xFF1986A4),
                     fontSize: 30,
                     fontWeight: FontWeight.w400,
                   ),
@@ -85,13 +86,13 @@ class NeedlesLeaves extends StatelessWidget {
             child: Builder(
               builder: (context) => ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => BlueORGreenPage()),
-                  );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BlueORGreenPage()),
+                    );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 14, 68, 5),
+                  backgroundColor: const Color.fromARGB(255, 14, 68, 5),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -127,6 +128,8 @@ class NeedlesLeaves extends StatelessWidget {
 }
 
 class Group5 extends StatelessWidget {
+  const Group5({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -163,6 +166,8 @@ class Group5 extends StatelessWidget {
 }
 
 class BlueOak2 extends StatelessWidget {
+  const BlueOak2({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
