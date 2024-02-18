@@ -116,6 +116,10 @@ class SoftOrPointyPage extends StatelessWidget {
                   ),
                 ),
               ),
+
+              
+
+
               Positioned(
                 left: 125,
                 top: 281,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/blueOrGreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class NeedlesLeaves extends StatelessWidget {
@@ -32,33 +33,6 @@ class NeedlesLeaves extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: width * 0.4,
-            top: 400,
-            child: Container(
-              width: 186,
-              height: 78,
-              decoration: BoxDecoration(
-                color: Color(0xFF3391CC),
-                borderRadius: BorderRadius.circular(5),
-                border: Border.all(
-                  color: Colors.black,
-                  style: BorderStyle.solid,
-                  width: 1,
-                ),
-              ),
-              child: Center(
-                child: Text(
-                  'Leaves',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 30,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          Positioned(
             left: width * 0.25, // Adjust the left position
             top: height * 0.05, // Adjust the top position
             child: Container(
@@ -79,26 +53,31 @@ class NeedlesLeaves extends StatelessWidget {
           ),
           Positioned(
             left: width * 0.4,
-            top: 200,
-            child: Container(
-              width: 186,
-              height: 78,
-              decoration: BoxDecoration(
-                color: Color(0xFF3391CC),
-                borderRadius: BorderRadius.circular(5),
-                border: Border.all(
+            top: height * 0.6,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => BlueORGreenPage()),
+                    );
+              },
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xFF3391CC),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                side: BorderSide(
                   color: Colors.black,
-                  style: BorderStyle.solid,
                   width: 1,
                 ),
               ),
-              child: Center(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
                 child: Text(
                   'Needles',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 30,
-                    fontFamily: 'Space Grotesk',
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -107,77 +86,36 @@ class NeedlesLeaves extends StatelessWidget {
           ),
           Positioned(
             left: width * 0.4,
-            top: height*0.6,
-            child: BlueOak2(), // Include BlueOak2 widget here
-          ),
-          Positioned(
-            left: width * 0.4,
             top: height * 0.8,
-            child: Group5(), // Include Group5 widget here
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Group5 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Transform(
-          transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(1.20),
-          child: Container(
-            width: 154.83,
-            height: 74.77,
-            child: Stack(
-              children: [
-                Positioned(
-                  left: -13.03,
-                  top: 166.28,
-                  child: Transform(
-                    transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(-2.70),
-                    child: Container(
-                      width: 4.19,
-                      height: 13.70,
-                      decoration: ShapeDecoration(
-                        color: Color(0xD3D9A25D),
-                        shape: StarBorder.polygon(sides: 3),
-                      ),
-                    ),
+            child: ElevatedButton(
+              onPressed: () {
+                // Add your logic here for 'Leaves' button
+              },
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xFF3391CC),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                side: BorderSide(
+                  color: Colors.black,
+                  width: 1,
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Leaves',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
-              ],
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class BlueOak2 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Transform(
-          transform: Matrix4.identity()
-            ..translate(0.0, 0.0)
-            ..rotateZ(0.80),
-          child: Container(
-            width: 228.97,
-            height: 227.83,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage("https://via.placeholder.com/229x228"),
-                fit: BoxFit.cover,
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
