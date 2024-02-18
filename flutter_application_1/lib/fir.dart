@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class Fir extends StatelessWidget {
   //const Sequoia({super.key});
@@ -53,17 +55,16 @@ class AndroidLarge12 extends StatelessWidget {
               ),
               Positioned(
                 left: 5,
-                top: 335,
+                top: 355,
                 child: SizedBox(
                   width: 285,
                   height: 70,
                   child: Text(
                     'Fir',
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: GoogleFonts.spaceGrotesk(
                       color: Color(0xFFFFE4C2),
                       fontSize: 30,
-                      fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
                     ),
@@ -97,10 +98,9 @@ class AndroidLarge12 extends StatelessWidget {
           child: Text(
             'Is this your tree?',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: GoogleFonts.spaceGrotesk(
               color: Color(0xFFBC3124),
               fontSize: 30,
-              fontFamily: 'Space Grotesk',
               fontWeight: FontWeight.w400,
               height: 0,
             ),
@@ -108,36 +108,31 @@ class AndroidLarge12 extends StatelessWidget {
         ),
       ),
       Positioned(
-        left: 38,
+        left: 20,//38,
         top: 703,
-        child: Container(
-          width: 284,
-          height: 46,
-          padding: const EdgeInsets.all(10),
-          decoration: ShapeDecoration(
-            color: Color(0xFFBC3124),
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyApp()),
+                    );
+          },
+          style: ElevatedButton.styleFrom(
+            primary: Color(0xFFBC3124),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
           ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: 270,
-                child: Text(
-                  'Return to Main',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Color(0xFFFFE4C2),
-                    fontSize: 25,
-                    fontFamily: 'Space Grotesk',
-                    fontWeight: FontWeight.w400,
-                    height: 0,
-                  ),
-                ),
+          child: Container(
+            width: 270,
+            child: Text(
+              'Return to Main',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.spaceGrotesk(
+                color: Color(0xFFFFE4C2),
+                fontSize: 25,
+                fontWeight: FontWeight.w400,
+                height: 0,
               ),
-            ],
+            ),
           ),
         ),
       ),
@@ -172,10 +167,9 @@ class AndroidLarge12 extends StatelessWidget {
                   height: 143,
                   child: Text(
                     'Firs are typically used as Christmas trees because of their bushy look and gentle needles. Remember these trees as flat friendly firs and try to find more!\n',
-                    style: TextStyle(
+                    style: GoogleFonts.spaceGrotesk(
                       color: Color(0xFF3391CC),
                       fontSize: 18,
-                      fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
                     ),
@@ -189,6 +183,7 @@ class AndroidLarge12 extends StatelessWidget {
     ],
   ),
 ),
+/*
 ElevatedButton(
           onPressed: () {
             Navigator.push(
@@ -197,6 +192,7 @@ ElevatedButton(
             },
           child: Text('Return to Main'),
         ),
+        */
       ]
     );
   }
