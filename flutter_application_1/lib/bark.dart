@@ -15,42 +15,50 @@ class BarkPage extends StatelessWidget {
         title: const Text('Color of Berries'),
       ),
       body: Center(
+        child: Container(
+          width: 367,
+          height: 800,
+          clipBehavior: Clip.antiAlias,
+          decoration: BoxDecoration(color: Colors.white),
           child: Stack(
             children: [
               Positioned(
+                left: -77,
+                top: -45,
                 child: Container(
-                  width: width,
-                  height: height,
+                  width: 513,
+                  height: 873,
                   decoration: BoxDecoration(color: const Color(0xFF639F32)),
                 ),
               ),
               Positioned(
-                left: 10,
-                top: 10,
+                left: 11,
+                top: 11,
                 child: Container(
-                  width: width - 20, //345,
-                  height: height - 75,
+                  width: 345,
+                  height: 635,
                   decoration: BoxDecoration(color: const Color(0xFFFFE4C2)),
                 ),
               ),
               Positioned(
-                left: width * 0.30, // Adjust the left position
-                top: height * 0.1, // Adjust the top position
+                left: 37,
+                top: 115,
                 child: SizedBox(
-                width: width * 0.44, // Adjust the width
-                height: 200, // Adjust the height
-                  child: Text(
-                    'Is the bark firm or soft?',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.spaceGrotesk(
-                      color: const Color(0xFFBC3124),
-                      fontSize: 30,
-                      fontWeight: FontWeight.w400,
-                      height: 0,
-                    ),
-                  ),
-                ),
-              ),
+                  width: 285,
+                  height: 80,
+                  child: Center(
+                    child: Text(
+                      'Is the bark firm or soft?',
+                      textAlign: TextAlign.center,
+                              style: GoogleFonts.spaceGrotesk(
+                                color: const Color(0xFF3391CC),
+                                fontSize: 30,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
               Positioned(
                 left: width * 0.45,
                 top: 400,
@@ -152,232 +160,13 @@ class BarkPage extends StatelessWidget {
                 ),
               ),
 
-              /*
-              // DOTS --------------------------------------------------
-              Positioned(
-                left: 52,
-                top: 64,
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: const ShapeDecoration(
-                    color: Color(0xFF00750B),
-                    shape: CircleBorder(),
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 33, // Adjust left position as needed
-                top: 295,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF639F32),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 230, // Adjust left position as needed
-                top: 204,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF639F32),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 34, // Adjust left position as needed
-                top: 600,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF639F32),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 471, // Adjust left position as needed
-                top: 46,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF639F32),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 544, // Adjust left position as needed
-                top: 263,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF639F32),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 270, // Adjust left position as needed
-                top: 500,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF639F32),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 634, // Adjust left position as needed
-                top: 100,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 733, // Adjust left position as needed
-                top: 322,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 96, // Adjust left position as needed
-                top: 480,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 277, // Adjust left position as needed
-                top: 82,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 258, // Adjust left position as needed
-                top: 313,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 429, // Adjust left position as needed
-                top: 206,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 508, // Adjust left position as needed
-                top: 136,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 698, // Adjust left position as needed
-                top: 224,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 733, // Adjust left position as needed
-                top: 64,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 200, // Adjust left position as needed
-                top: 580,  // Adjust top position as needed
-                child: Container(
-                  width: 18,
-                  height: 19,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF3391CC),
-                    shape: CircleBorder(), // Use CircleBorder to make it oval
-                    */
                     ]
                   ),
                 ),
-              );
-  }
-}
+              ),
+            );
+          }
+        }
 
 /*
 class BarkPage extends StatelessWidget {
