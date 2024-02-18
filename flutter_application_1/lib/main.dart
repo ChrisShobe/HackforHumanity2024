@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'loginPage.dart';
-import 'blueOrGreen.dart';
+import 'welcomePage.dart';
+import 'blueORgreen.dart';
 
 void main() {
   runApp(const MyApp());
