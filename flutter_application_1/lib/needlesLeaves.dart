@@ -151,16 +151,16 @@ class NeedlesLeaves extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: width * 0.6,
+            left: width * 0.5,
             top: height * 0.4,
             child: Transform(
-              transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(1.2),
+              transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(1.6),
               child: Container(
                 width: 100,
                 height: 100,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(""),
+                    image: NetworkImage("https://www.digitalscrapbook.com/sites/default/files/styles/456_scale/public/s3fs-user-content/graphic-image/user-2725/node-145765/memories-traditions-pine-needle-graphic-embellishment-element-leaf-nature-fur-tree-green.png"),
                     fit: BoxFit.cover,
                   ),
                 ),
