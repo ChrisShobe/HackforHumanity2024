@@ -111,7 +111,7 @@ class AndroidLarge12 extends StatelessWidget {
                           height: 319,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: NetworkImage("https://via.placeholder.com/265x319"),
+                              image: NetworkImage("https://s3-alpha-sig.figma.com/img/c666/9524/66e5548111d91b0256453580d9cc0ddc?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D90qELaBvyDxCr31hTclnlpE9ZbdWlgu7N8iczB0ce~EsPqHMK70GNz-hMDAOi8ayZTiQQZIGrm1A5ubbLopqAifUFWNkiygfMBX88TuMzD7Zwi6iZvAQCP2iwZPQSizC~L3Im0k7vBnYbDNmAHuLgB9UZahcht2jZ2hf8HaGpnvmJV4wmFJaFye9n7C8dyHpZd9D8esC3iMHHtLQ6ac8qr5DJK4~Ja-YDpW4mFEyXVuba77-EQ7rdoBDeSzflHzh8fx2~ObWpLjDCGpfvdk-3TuuBPPWTtzJa4pc28V-KAF4hmJR6ghxsripr6dumkv0YRc4aTvv2a6ksgZ0b5pZA__"),
                               fit: BoxFit.fill,
                             ),
                           ),
