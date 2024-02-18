@@ -20,11 +20,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Login'),
         ),
-        body: Center(
-          child: Container(
-          
+        body: Container(
           width: width, // Use the full available width
-          height: height * 2, // Use the full available height
+          height: height, // Use the full available height
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: const Color(0xFFFFE4C2)),
           child: Stack(
@@ -33,13 +31,13 @@ class MyApp extends StatelessWidget {
                 left: width * 0.19, // Adjust the left position
                 top: height * 0.72, // Adjust the top position
                 child: Container(
-                  width: width * 0.15, // Adjust the width
+                  width: width * 0.26, // Adjust the width
                   height: height * 0.05, // Adjust the height
-                  padding: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(10),
                   decoration: ShapeDecoration(
                     color: const Color(0xFF082803),
                     shape: RoundedRectangleBorder(
-                      side: const BorderSide(width: 5),
+                      side: const BorderSide(width: 2),
                       borderRadius: BorderRadius.circular(5),
                     ),
                   ),
@@ -49,7 +47,7 @@ class MyApp extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        width: width * 0.03, // Adjust the width
+                        width: width * 0.09, // Adjust the width
                         height: width * 0.09, // Adjust the height
                         clipBehavior: Clip.antiAlias,
                         decoration: BoxDecoration(),
@@ -59,7 +57,7 @@ class MyApp extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 10,
+                          fontSize: 15,
                           fontFamily: 'Sora',
                           fontWeight: FontWeight.w400,
                           height: 0,
@@ -70,7 +68,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: width * 0.20, // Adjust the left position
+                left: width * 0.28, // Adjust the left position
                 top: height * 0.19, // Adjust the top position
                 child: SizedBox(
                   width: width * 0.44, // Adjust the width
@@ -143,7 +141,6 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-    ),
     );
   }
 }
