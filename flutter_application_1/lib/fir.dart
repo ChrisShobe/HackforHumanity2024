@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'main.dart';
 
 class Fir extends StatelessWidget {
   //const Sequoia({super.key});
@@ -187,7 +188,15 @@ class AndroidLarge12 extends StatelessWidget {
       ),
     ],
   ),
-)
+),
+ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+                  MaterialPageRoute(builder: (context) => MyApp()));
+            },
+          child: Text('Return to Main'),
+        ),
       ]
     );
   }
