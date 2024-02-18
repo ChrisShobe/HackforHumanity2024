@@ -229,14 +229,14 @@ class AndroidLarge12 extends StatelessWidget {
             ],
           ),
         ),
-        ElevatedButton(
+        /*ElevatedButton(
           onPressed: () {
             Navigator.push(
               context,
                   MaterialPageRoute(builder: (context) => MyApp()));
             },
           child: Text('Return to Main'),
-        ),
+        ),*/
       ],
     );
   }
