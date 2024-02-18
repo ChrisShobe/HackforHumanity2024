@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LogInPage extends StatelessWidget {
+class ScaleNeedlesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: const Text('Needle Look'),
       ),
       body: Center(
         child: Container(
