@@ -34,8 +34,29 @@ class NeedlesLeaves extends StatelessWidget {
               color: const Color(0xFFFFE4C2),
             ),
           ),
+          
           Positioned(
-            left: width * 0.4,
+            left: width * 0.30, // Adjust the left position
+            top: height * 0.05, // Adjust the top position
+            child: SizedBox(
+              width: width * 0.44, // Adjust the width
+              height: 200, // Adjust the height
+              child: Center(
+                child: Text(
+                  'Does your tree have needles or leaves?',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.spaceGrotesk(
+                    color: const Color(0xFF1986A4),
+                    fontSize: 30,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          Positioned(
+            left: width * 0.45,
             top: 400,
             child: Builder(
               builder: (context) => ElevatedButton(
@@ -61,28 +82,10 @@ class NeedlesLeaves extends StatelessWidget {
               ),
             ),
           ),
+
           Positioned(
-            left: width * 0.25, // Adjust the left position
-            top: height * 0.05, // Adjust the top position
-            child: SizedBox(
-              width: width * 0.44, // Adjust the width
-              height: 200, // Adjust the height
-              child: Center(
-                child: Text(
-                  'Does your tree have needles or leaves?',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.spaceGrotesk(
-                    color: const Color(0xFF1986A4),
-                    fontSize: 30,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            left: width * 0.4,
-            top: 200,
+            left: width * 0.45,
+            top: 281, // Adjust the top position as needed
             child: Builder(
               builder: (context) => ElevatedButton(
                 onPressed: () {
@@ -103,7 +106,6 @@ class NeedlesLeaves extends StatelessWidget {
                     style: GoogleFonts.spaceGrotesk(
                       color: Colors.black,
                       fontSize: 30,
-                      //fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                     ),
                   ),
@@ -111,6 +113,7 @@ class NeedlesLeaves extends StatelessWidget {
               ),
             ),
           ),
+
           Positioned(
             left: width * 0.4,
             top: height * 0.6,
