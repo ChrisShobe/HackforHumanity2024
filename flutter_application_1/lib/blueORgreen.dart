@@ -335,15 +335,6 @@ class BlueORGreenPage extends StatelessWidget {
                   ),
                 ),
               ),
-
-
-
-
-
-
-
-
-
             ],
           ),
         ),
