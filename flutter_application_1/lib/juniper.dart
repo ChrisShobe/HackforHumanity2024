@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'main.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Juniper extends StatelessWidget {
 
@@ -51,17 +53,16 @@ class AndroidLarge12 extends StatelessWidget {
               ),
               Positioned(
                 left: 0,
-                top: 335,
+                top: 350,//335,
                 child: SizedBox(
                   width: 295,
                   height: 70,
                   child: Text(
                     'Juniper',
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: GoogleFonts.spaceGrotesk(
                       color: Color(0xFFFFE4C2),
                       fontSize: 30,
-                      fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
                     ),
@@ -95,10 +96,9 @@ class AndroidLarge12 extends StatelessWidget {
           child: Text(
             'Is this your tree?',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: GoogleFonts.spaceGrotesk(
               color: Color(0xFFBC3124),
               fontSize: 30,
-              fontFamily: 'Space Grotesk',
               fontWeight: FontWeight.w400,
               height: 0,
             ),
@@ -110,32 +110,33 @@ class AndroidLarge12 extends StatelessWidget {
         top: 726,
         child: Container(
           width: 284,
-          height: 46,
+          height: 56,
           padding: const EdgeInsets.all(10),
-          decoration: ShapeDecoration(
-            color: Color(0xFFBC3124),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: 270,
-                child: Text(
-                  'Return to Main',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Color(0xFFFFE4C2),
-                    fontSize: 25,
-                    fontFamily: 'Space Grotesk',
-                    fontWeight: FontWeight.w400,
-                    height: 0,
-                  ),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              primary: Color(0xFFBC3124),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+            ),
+            onPressed: () {
+              // Add your logic here
+              Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyApp()),
+                    );
+            },
+            child: SizedBox(
+              width: 270,
+              child: Text(
+                'Return to Main',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.spaceGrotesk(
+                  color: Color(0xFFFFE4C2),
+                  fontSize: 25,
+                  fontWeight: FontWeight.w400,
+                  height: 0,
                 ),
               ),
-            ],
+            ),
           ),
         ),
       ),
@@ -164,7 +165,7 @@ class AndroidLarge12 extends StatelessWidget {
               ),
               Positioned(
                 left: 13,
-                top: 0,
+                top: 10,
                 child: SizedBox(
                   width: 265,
                   height: 186.33,
@@ -173,20 +174,18 @@ class AndroidLarge12 extends StatelessWidget {
                       children: [
                         TextSpan(
                           text: 'Junipers have green berries that turn pale blue as they grow. They have a strong pine smell when crushed.\nAlso look for:\n',
-                          style: TextStyle(
+                          style: GoogleFonts.spaceGrotesk(
                             color: Color(0xFF3391CC),
                             fontSize: 18,
-                            fontFamily: 'Space Grotesk',
                             fontWeight: FontWeight.w400,
                             height: 0,
                           ),
                         ),
                         TextSpan(
                           text: 'Round, scale-like needles\nRed and gray bark',
-                          style: TextStyle(
+                          style: GoogleFonts.spaceGrotesk(
                             color: Color(0xFF3391CC),
                             fontSize: 18,
-                            fontFamily: 'Space Grotesk',
                             fontWeight: FontWeight.w400,
                             height: 0,
                           ),
