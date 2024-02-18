@@ -4,6 +4,12 @@ import 'loginPage.dart';
 import 'welcomePage.dart';
 import 'blueORgreen.dart';
 import 'softORpointy.dart';
+import 'sequoia.dart';
+import 'scaleNeedles.dart';
+import 'bark.dart';
+
+
+
 
 void main() {
   runApp(const MyApp());
