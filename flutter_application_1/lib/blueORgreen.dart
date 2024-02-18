@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'scaleNeedles.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'juniper.dart';
 
 class BlueORGreenPage extends StatelessWidget {
   @override
@@ -92,8 +92,10 @@ class BlueORGreenPage extends StatelessWidget {
                 width: 90,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add your logic here for 'Yes'
-                  },
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Juniper()),                  
+                    );},
                   style: ElevatedButton.styleFrom(
                     primary: const Color(0xFFBC3124),
                     shape: RoundedRectangleBorder(
