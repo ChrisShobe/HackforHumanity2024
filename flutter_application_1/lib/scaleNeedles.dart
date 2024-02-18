@@ -4,8 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'bark.dart';
 
 class ScaleNeedlesPage extends StatelessWidget {
-  const ScaleNeedlesPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

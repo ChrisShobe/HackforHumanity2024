@@ -3,8 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'blueOrGreen.dart';
 
 class NeedlesLeaves extends StatelessWidget {
-  const NeedlesLeaves({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -26,8 +24,8 @@ class NeedlesLeaves extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 10,
-            top: 10,
+            left: 11,
+            top: 11,
             child: Container(
               width: width - 20, //345,
               height: height - 75,
@@ -52,7 +50,7 @@ class NeedlesLeaves extends StatelessWidget {
                   child: Text(
                     'Leaves',
                     style: GoogleFonts.spaceGrotesk(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 30,
                       fontWeight: FontWeight.w400,
                     ),
@@ -62,7 +60,7 @@ class NeedlesLeaves extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: width * 0.25, // Adjust the left position
+            left: width * 0.3, // Adjust the left position
             top: height * 0.05, // Adjust the top position
             child: SizedBox(
               width: width * 0.44, // Adjust the width
@@ -101,7 +99,7 @@ class NeedlesLeaves extends StatelessWidget {
                   child: Text(
                     'Needles',
                     style: GoogleFonts.spaceGrotesk(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 30,
                       //fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
@@ -118,7 +116,7 @@ class NeedlesLeaves extends StatelessWidget {
           ),
           Positioned(
             left: width * 0.4,
-            top: height * 0.8,
+            top: height * 0.6,
             child: Group5(), // Include Group5 widget here
           ),
         ],
