@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -21,13 +22,13 @@ class WelcomePage extends StatelessWidget {
                 child: Text(
                   'Welcome to \nYosemite National Park',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Color(0xFFBC3124),
+                  style: GoogleFonts.spicyRice(
+                    color: const Color(0xFFBC3124),
                     fontSize: 30,
-                    fontFamily: 'Spicy Rice',
                     fontWeight: FontWeight.w400,
                     height: 0,
-                  ),
+                    
+                  )
                 ),
               ),
               Positioned(

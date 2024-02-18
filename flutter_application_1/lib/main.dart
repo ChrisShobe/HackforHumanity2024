@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'loginPage.dart';
 import 'welcomePage.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -35,13 +37,13 @@ class MyApp extends StatelessWidget {
                     height: height * 0.08, // Adjust the height
                     child: Text(
                       'Welcome!',
-                      style: TextStyle(
-                        color: const Color(0xFFBC3224),
-                        fontSize: 35,
-                        fontFamily: 'Spicy Rice',
-                        fontWeight: FontWeight.w400,
-                        height: 0,
-                      ),
+                      style: GoogleFonts.spicyRice(
+                      color: const Color(0xFFBC3224),
+                      fontSize: 35,
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                      
                     ),
                   ),
                 ),
