@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'loginPage.dart';
+import 'welcomePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Login'),
+          title: const Text('Home'),
         ),
         body: Center(
           child: Container(
@@ -46,23 +48,28 @@ class MyApp extends StatelessWidget {
                 Positioned(
                   left: width * 0.19, // Adjust the left position
                   top: height * 0.72, // Adjust the top position
-                  child: ElevatedButton(
-                    onPressed: () {
-                      // Add your login logic here
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF082803),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5),
+                  child: Builder(
+                    builder: (context) => ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => LogInPage()),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromARGB(255, 14, 68, 5),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
                       ),
-                    ),
-                    child: const Text(
-                      'Login',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 10,
-                        fontFamily: 'Sora',
-                        fontWeight: FontWeight.w400,
+                      child: const Text(
+                        'Login',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 10,
+                          fontFamily: 'Sora',
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                     ),
                   ),
@@ -70,23 +77,28 @@ class MyApp extends StatelessWidget {
                 Positioned(
                   left: width * 0.55, // Adjust the left position
                   top: height * 0.72, // Adjust the top position
-                  child: ElevatedButton(
-                    onPressed: () {
-                      // Add your skip logic here
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF082803),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5),
+                  child: Builder(
+                    builder: (context) => ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => WelcomePage()),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromARGB(255, 14, 68, 5),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
                       ),
-                    ),
-                    child: const Text(
-                      'Skip',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontFamily: 'Sora',
-                        fontWeight: FontWeight.w400,
+                      child: const Text(
+                        'Skip',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontFamily: 'Sora',
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                     ),
                   ),

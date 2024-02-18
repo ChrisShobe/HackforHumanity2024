@@ -1,0 +1,84 @@
+import 'package:flutter/material.dart';
+
+class WelcomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Login'),
+      ),
+      body: Center(
+        child: Container(
+          width: 360,
+          height: 780,
+          clipBehavior: Clip.antiAlias,
+          decoration: BoxDecoration(color: Color(0xFFFFE4C2)),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 30,
+                top: 80,
+                child: Text(
+                  'Welcome to \nYosemite National Park',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFFBC3124),
+                    fontSize: 30,
+                    fontFamily: 'Spicy Rice',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 73,
+                top: 245,
+                child: Text(
+                  'Start Plant ID',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFFFFE4C2),
+                    fontSize: 30,
+                    fontFamily: 'Sora',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 74,
+                top: 388,
+                child: Text(
+                  'Species Scrapbook',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFFFFE4C2),
+                    fontSize: 20,
+                    fontFamily: 'Sora',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 133,
+                top: 475,
+                child: Text(
+                  'Log Out',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFFFFE4C2),
+                    fontSize: 20,
+                    fontFamily: 'Sora',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
