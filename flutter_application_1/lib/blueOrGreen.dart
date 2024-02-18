@@ -38,10 +38,10 @@ class BlueORGreenPage extends StatelessWidget {
               ),
               Positioned(
                 left: 37,
-                top: 135,
+                top: 115,
                 child: SizedBox(
                   width: 285,
-                  height: 70,
+                  height: 80,
                   child: Text(
                     'Does it have blue and green berries?',
                     textAlign: TextAlign.center,
