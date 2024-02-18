@@ -74,7 +74,7 @@ class BlueORGreenPage extends StatelessWidget {
                     shadowColor: const Color(0x3F000000),
                     elevation: 4,
                   ),
-                  child: const Text(
+                  child: Text(
                     'No',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.spaceGrotesk(

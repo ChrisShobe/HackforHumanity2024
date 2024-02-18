@@ -42,7 +42,7 @@ class ScaleNeedlesPage extends StatelessWidget {
                 child: SizedBox(
                   width: 320,
                   height: 70,
-                  child: const Text(
+                  child: Text(
                     'Are the needles short and layered like scales?',
                     style: GoogleFonts.spaceGrotesk(
                       color: Color(0xFF639F32),
