@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/sequoia.dart';
+import 'sequoia.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'cedar.dart';
 
 class BarkPage extends StatelessWidget {
-  const BarkPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;

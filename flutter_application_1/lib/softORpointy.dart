@@ -143,6 +143,25 @@ class SoftOrPointyPage extends StatelessWidget {
                   ),
                 ),
               ),
+
+              Positioned(
+                left: -60,
+                top: 520,
+                child: Transform(
+                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(-1.05),
+                    child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
+                      image: DecorationImage(
+                      image: NetworkImage("https://s3-alpha-sig.figma.com/img/72db/cdcc/965187ef0ce0c1961d79797ccf0d9191?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LixcyoUW4ZPa6LodGU63NakwJrOhqReK673LRGhOHjO6RqhPHRCU8nDfji5kJm-3bHmH8bPijus31-IM8Hu4igxI2xFJFHX0fmqJPDQPuKWs1MwC5TAGySjDcigP0mno2cp9s-8tQoq3dm6hcl5PkGgs6l-LYi0bQezRam40KURZ6Qc7Isp~jWDvzGfKIwEqYQYcZFRQQTGfKOlYv0i3KizyFCbeBuKrxVGZNwI8uwDanf8Du1EFR3-Xrh05x7zsdRgjtnuN34U~h64TWcMvR7bHahW2F1cOvBP2iG1UNl-bqcNgrQtnfuib-0USxVL8f6V-GGGONmsQEhlNS~hqVw__"),
+                      fit: BoxFit.cover,
+                  ),
+                  ),
+                  ),
+                  )
+              ),
+
             ]
           ),
         ),
