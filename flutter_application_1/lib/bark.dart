@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_application_1/sequoia.dart';
 import 'sequoia.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'cedar.dart';
-import 'sequoia.dart';
 
 class BarkPage extends StatelessWidget {
   @override
@@ -42,7 +40,7 @@ class BarkPage extends StatelessWidget {
               ),
               Positioned(
                 left: 37,
-                top: 115,
+                top: 100,
                 child: SizedBox(
                   width: 285,
                   height: 80,
@@ -60,7 +58,7 @@ class BarkPage extends StatelessWidget {
                         ),
                       ),
               Positioned(
-                left: width * 0.45,
+                left: width * 0.39,
                 top: 400,
                 height: 50,
                 width: 90,
@@ -84,15 +82,15 @@ class BarkPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 25,
+                      fontSize: 20,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
                 ),
               ),
               Positioned(
-                left: width * 0.45,
-                top: 281,
+                left: width * 0.39,
+                top: 270,
                 height: 50,
                 width: 90,
                 child: ElevatedButton(
@@ -113,7 +111,7 @@ class BarkPage extends StatelessWidget {
                     'Soft',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 25,
+                      fontSize: 20,
                       fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
@@ -125,12 +123,12 @@ class BarkPage extends StatelessWidget {
                // Added Transform widget with NetworkImage
                       Positioned(
                         left: 390,
-                        top: 600,
+                        top: 630,
                         child: Transform(
                           transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(3.05),
                           child: Container(
-                    width: 270,
-                    height: 270,
+                    width: 220,
+                    height: 220,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: NetworkImage("https://s3-alpha-sig.figma.com/img/cb52/fce2/44c32d4d865b13de8a1674145fa83c55?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EMI3nKBdyg~BiQQuo0GuITg-Oiqjvz-HQ4851vuqenD2GHlonSFYcfSz8E6vnmmObTSjyxZ1com5-R9i0pQkyE8XAR1nF8uIisTDism3nyXTehqXGIDwYm8eRS7oZ75717OsFQ5yGVoAIK~86aBeoNgmWxbjbPeZmzBmYPBJNQN~KpGMZahva6RfRKMra8ebDr4Qfqjm2EDKTO8RgOpLkYlqVJMRuXmwfwK1l6Mvycewr-hIzQXrkBKJAqxTlO6qZQ5FLn9SDG6ufoX3ep~NBz9cYYwf9pW0xDoTDUUReMmtNvzQqcKzdH7wawY7m1dryG6N29LxnEq5T7~m-19irg__"),
@@ -143,13 +141,13 @@ class BarkPage extends StatelessWidget {
 
               // Added Transform widget with NetworkImage
               Positioned(
-                left: 60,
-                top: 40,
+                left: 50,
+                top: 20,
                 child: Transform(
                   transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(0.5),
                   child: Container(
-                    width: 270,
-                    height: 270,
+                    width: 240,
+                    height: 240,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: NetworkImage("https://s3-alpha-sig.figma.com/img/bc85/ad7b/545c28de55865c7533e467b9f57724b0?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kCdGsDe-1zSwQQkBOm5MK49QW1f-eYhlcRlIHhiPtJaDRiOqjjS528yuJdnmjMnE-Bbmx1lbZuOWb8Zz1Fg9fPmNUcZE-Ng7C8x02~TofNM5GMGapWx0tx9PMadEsMh3wM~Vf3y5s2SDPo~vln0peh365S6YVzoBfxQPA12W4SlrSeKRHAeCdTjWoBaHbVlzloSZQ5eFi1KGquce6EEaLogkkMv7R4N9pq~PTFDjKVamGpc0fTQlf1WHhO5JuCsWLoMRJcMetgrRKtUiyqrgjY0Wwaohkuc0Lppt8~GKfGerzZmspb5n6zxui-oKIVLG7LPIEkeCaHlbOF0eJTcFmQ__"),
