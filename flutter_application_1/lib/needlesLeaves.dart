@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/blueOrGreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'blueORgreen.dart';
 
@@ -9,7 +10,7 @@ class NeedlesLeaves extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: const Text('Needles or Leaves?'),
       ),
       body: Stack(
         children: <Widget>[
@@ -35,25 +36,25 @@ class NeedlesLeaves extends StatelessWidget {
           Positioned(
             left: width * 0.4,
             top: 400,
-            child: Container(
-              width: 186,
-              height: 78,
-              decoration: BoxDecoration(
-                color: Color(0xFF3391CC),
-                borderRadius: BorderRadius.circular(5),
-                border: Border.all(
-                  color: Colors.black,
-                  style: BorderStyle.solid,
-                  width: 1,
+            child: Builder(
+              builder: (context) => ElevatedButton(
+                onPressed: () {
+                  //Oak tree
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 14, 68, 5),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
                 ),
-              ),
-              child: Center(
-                child: Text(
-                  'Leaves',
-                  style: GoogleFonts.spaceGrotesk(
-                    color: Colors.black,
-                    fontSize: 30,
-                    fontWeight: FontWeight.w400,
+                child: Center(
+                  child: Text(
+                    'Leaves',
+                    style: GoogleFonts.spaceGrotesk(
+                      color: Colors.black,
+                      fontSize: 30,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ),
               ),
@@ -62,7 +63,7 @@ class NeedlesLeaves extends StatelessWidget {
           Positioned(
             left: width * 0.25, // Adjust the left position
             top: height * 0.05, // Adjust the top position
-            child: Container(
+            child: SizedBox(
               width: width * 0.44, // Adjust the width
               height: height * 0.08, // Adjust the height
               child: Center(
@@ -81,26 +82,29 @@ class NeedlesLeaves extends StatelessWidget {
           Positioned(
             left: width * 0.4,
             top: 200,
-            child: Container(
-              width: 186,
-              height: 78,
-              decoration: BoxDecoration(
-                color: Color(0xFF3391CC),
-                borderRadius: BorderRadius.circular(5),
-                border: Border.all(
-                  color: Colors.black,
-                  style: BorderStyle.solid,
-                  width: 1,
+            child: Builder(
+              builder: (context) => ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BlueORGreenPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 14, 68, 5),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
                 ),
-              ),
-              child: Center(
-                child: Text(
-                  'Needles',
-                  style: GoogleFonts.spaceGrotesk(
-                    color: Colors.black,
-                    fontSize: 30,
-                    //fontFamily: 'Space Grotesk',
-                    fontWeight: FontWeight.w400,
+                child: Center(
+                  child: Text(
+                    'Needles',
+                    style: GoogleFonts.spaceGrotesk(
+                      color: Colors.black,
+                      fontSize: 30,
+                      //fontFamily: 'Space Grotesk',
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ),
               ),
@@ -108,7 +112,7 @@ class NeedlesLeaves extends StatelessWidget {
           ),
           Positioned(
             left: width * 0.4,
-            top: height*0.6,
+            top: height * 0.6,
             child: BlueOak2(), // Include BlueOak2 widget here
           ),
           Positioned(
@@ -142,7 +146,7 @@ class Group5 extends StatelessWidget {
                     child: Container(
                       width: 4.19,
                       height: 13.70,
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         color: Color(0xD3D9A25D),
                         shape: StarBorder.polygon(sides: 3),
                       ),
