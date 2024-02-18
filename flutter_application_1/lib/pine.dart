@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'main.dart';
 
 
 class Pine extends StatelessWidget {
@@ -111,7 +112,10 @@ class AppPine extends StatelessWidget {
                 top: 835,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add your logic here
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyApp()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xFFBC3124),

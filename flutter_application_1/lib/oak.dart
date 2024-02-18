@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'welcomePage.dart';
+import 'main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
@@ -132,7 +132,7 @@ class AndroidTree extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => WelcomePage()),
+                      MaterialPageRoute(builder: (context) => MyApp()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
