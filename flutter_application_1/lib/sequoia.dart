@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'welcomePage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Sequoia extends StatelessWidget {
   //const Sequoia({super.key});
