@@ -69,7 +69,7 @@ class AppPine extends StatelessWidget {
                       ),
                       Positioned(
                         left: 0,
-                        top: 335,
+                        top: 345,//335,
                         child: SizedBox(
                           width: 295,
                           height: 70,
@@ -108,7 +108,7 @@ class AppPine extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 38,
+                left: 20,//38,
                 top: 835,
                 child: ElevatedButton(
                   onPressed: () {
@@ -161,7 +161,7 @@ class AppPine extends StatelessWidget {
                       ),
                       Positioned(
                         left: 12,
-                        top: 30,
+                        top: 20,//30,
                         child: SizedBox(
                           width: 265,
                           height: 262.60,
@@ -169,7 +169,7 @@ class AppPine extends StatelessWidget {
                             'There are many different kinds of pine trees in the park, with different shapes, colors, pine cones, and even smells! Your tree might even smell like vanilla or butterscotch! But all pines grow their needles in bunches. Count how many needles there are in your tree’s bundles, and remember that pines come in packets! \n',
                             style: GoogleFonts.spaceGrotesk(
                               color: Color(0xFF3391CC),
-                              fontSize: 18,
+                              fontSize: 17.5,
                               fontWeight: FontWeight.w400,
                               height: 0,
                             ),

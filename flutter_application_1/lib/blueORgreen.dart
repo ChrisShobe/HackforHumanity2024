@@ -50,7 +50,7 @@ class BlueORGreenPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: width * 0.45,
+                left: width * 0.39,
                 top: 400,
                 height: 50,
                 width: 90,
@@ -81,7 +81,7 @@ class BlueORGreenPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: width * 0.45,
+                left: width * 0.39,
                 top: 281,
                 height: 50,
                 width: 90,
@@ -139,7 +139,7 @@ class BlueORGreenPage extends StatelessWidget {
               ),
 
               Positioned(
-                left: 230, // Adjust left position as needed
+                left: 250, // Adjust left position as needed
                 top: 204,  // Adjust top position as needed
                 child: Container(
                   width: 18,

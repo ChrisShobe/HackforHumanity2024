@@ -53,7 +53,7 @@ class AndroidTree extends StatelessWidget {
               ),
               Positioned(
                 left: 37,
-                top: 452,
+                top: 400,//452,
                 child: SizedBox(
                   width: 285,
                   height: 70,
@@ -90,8 +90,8 @@ class AndroidTree extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        left: 0,
-                        top: 334,
+                        left: -5,
+                        top: 350,//334,
                         child: SizedBox(
                           width: 295,
                           height: 70,
@@ -126,7 +126,7 @@ class AndroidTree extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 38,
+                left: 23,//38,
                 top: 723,
                 child: ElevatedButton(
                   onPressed: () {
@@ -179,7 +179,7 @@ class AndroidTree extends StatelessWidget {
                       ),
                       Positioned(
                         left: 13,
-                        top: 0,
+                        top: 10,//0,
                         child: SizedBox(
                           width: 265,
                           height: 181.13,
