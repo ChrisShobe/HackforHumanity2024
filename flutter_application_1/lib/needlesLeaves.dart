@@ -66,7 +66,7 @@ class NeedlesLeaves extends StatelessWidget {
             top: height * 0.05, // Adjust the top position
             child: SizedBox(
               width: width * 0.44, // Adjust the width
-              height: height * 0.08, // Adjust the height
+              height: 200, // Adjust the height
               child: Center(
                 child: Text(
                   'Does your tree have needles or leaves?',
