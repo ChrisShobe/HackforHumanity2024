@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/sequoia.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'cedar.dart';
 
 class BarkPage extends StatelessWidget {
   const BarkPage({Key? key}) : super(key: key);
@@ -49,115 +50,117 @@ class BarkPage extends StatelessWidget {
                     child: Text(
                       'Is the bark firm or soft?',
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.spaceGrotesk(
-                        color: const Color(0xFF3391CC),
-                        fontSize: 30,
-                        fontWeight: FontWeight.w400,
+                              style: GoogleFonts.spaceGrotesk(
+                                color: const Color(0xFF3391CC),
+                                fontSize: 30,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 135,
-                top: 301,
-                height: 50,
-                width: 110,
-                child: ElevatedButton(
-                  onPressed: () {
-                    // cedar
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFF3391CC),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    shadowColor: const Color(0x3F000000),
-                    elevation: 4,
-                  ),
-                  child: const Text(
-                    'Firm',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 25,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 135,
-                top: 416,
-                height: 50,
-                width: 110,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Sequoia()),
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFF3391CC),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    shadowColor: const Color(0x3F000000),
-                    elevation: 4,
-                  ),
-                  child: const Text(
-                    'Soft',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 25,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: width * 0.4,
-                top: height * 0.6,
-                child: Transform(
-                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(3.05),
-                  child: Container(
-                    width: 421.53,
-                    height: 364.29,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: const NetworkImage("https://via.placeholder.com/422x364"),
-                        fit: BoxFit.fill,
+                      Positioned(
+                        left: 135,
+                        top: 301,
+                        height: 50,
+                        width: 110,
+                        child: ElevatedButton(
+                          onPressed: () {
+                              Navigator.push(
+                              context,
+                                  MaterialPageRoute(builder: (context) => Cedar()));
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFF3391CC),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            shadowColor: const Color(0x3F000000),
+                            elevation: 4,
+                          ),
+                          child: const Text(
+                            'Firm',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 25,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: width * 0.4,
-                top: height * 0.8,
-                child: Transform(
-                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(0.50),
-                  child: Container(
-                    width: 137.43,
-                    height: 140.33,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: const NetworkImage("https://via.placeholder.com/137x140"),
-                        fit: BoxFit.cover,
+                      Positioned(
+                        left: 135,
+                        top: 416,
+                        height: 50,
+                        width: 110,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Sequoia()),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFF3391CC),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            shadowColor: const Color(0x3F000000),
+                            elevation: 4,
+                          ),
+                          child: const Text(
+                            'Soft',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 25,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                ),
-              ),
-              // Added Transform widget with NetworkImage
-              Positioned(
-                left: 390,
-                top: 600,
-                child: Transform(
-                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(3.05),
-                  child: Container(
+                      Positioned(
+                        left: width * 0.4,
+                        top: height * 0.6,
+                        child: Transform(
+                          transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(3.05),
+                          child: Container(
+                            width: 421.53,
+                            height: 364.29,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: const NetworkImage("https://via.placeholder.com/422x364"),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: width * 0.4,
+                        top: height * 0.8,
+                        child: Transform(
+                          transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(0.50),
+                          child: Container(
+                            width: 137.43,
+                            height: 140.33,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: const NetworkImage("https://via.placeholder.com/137x140"),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      // Added Transform widget with NetworkImage
+                      Positioned(
+                        left: 390,
+                        top: 600,
+                        child: Transform(
+                          transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(3.05),
+                          child: Container(
                     width: 270,
                     height: 270,
                     decoration: BoxDecoration(

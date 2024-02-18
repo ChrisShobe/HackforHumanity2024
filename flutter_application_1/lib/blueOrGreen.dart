@@ -1,47 +1,42 @@
 import 'package:flutter/material.dart';
 import 'scaleNeedles.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'juniper.dart';
 
 class BlueORGreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Color of Berries'),
       ),
       body: Center(
-        child: Container(
-          width: 367,
-          height: 800,
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(color: Colors.white),
           child: Stack(
             children: [
               Positioned(
-                left: -77,
-                top: -45,
                 child: Container(
-                  width: 513,
-                  height: 873,
+                  width: width,
+                  height: height,
                   decoration: BoxDecoration(color: const Color(0xFF639F32)),
                 ),
               ),
               Positioned(
-                left: 11,
-                top: 11,
+                left: 10,
+                top: 10,
                 child: Container(
-                  width: 345,
-                  height: 635,
+                  width: width - 20, //345,
+                  height: height - 75,
                   decoration: BoxDecoration(color: const Color(0xFFFFE4C2)),
                 ),
               ),
               Positioned(
-                left: 37,
-                top: 115,
+                left: width * 0.30, // Adjust the left position
+                top: height * 0.1, // Adjust the top position
                 child: SizedBox(
-                  width: 285,
-                  height: 80,
+                width: width * 0.44, // Adjust the width
+                height: 200, // Adjust the height
                   child: Text(
                     'Does it have blue and green berries?',
                     textAlign: TextAlign.center,
@@ -55,8 +50,8 @@ class BlueORGreenPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 135,
-                top: 416,
+                left: width * 0.45,
+                top: 400,
                 height: 50,
                 width: 90,
                 child: ElevatedButton(
@@ -86,14 +81,16 @@ class BlueORGreenPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 135,
+                left: width * 0.45,
                 top: 281,
                 height: 50,
                 width: 90,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add your logic here for 'Yes'
-                  },
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Juniper()),                  
+                    );},
                   style: ElevatedButton.styleFrom(
                     primary: const Color(0xFFBC3124),
                     shape: RoundedRectangleBorder(
@@ -337,7 +334,6 @@ class BlueORGreenPage extends StatelessWidget {
               ),
             ],
           ),
-        ),
       ),
     );
   }

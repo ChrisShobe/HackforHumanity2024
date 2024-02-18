@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'blueOrGreen.dart';
+import 'oak.dart';
 
 class NeedlesLeaves extends StatelessWidget {
   @override
@@ -32,13 +33,37 @@ class NeedlesLeaves extends StatelessWidget {
               color: const Color(0xFFFFE4C2),
             ),
           ),
+          
           Positioned(
-            left: width * 0.4,
+            left: width * 0.30, // Adjust the left position
+            top: height * 0.05, // Adjust the top position
+            child: SizedBox(
+              width: width * 0.44, // Adjust the width
+              height: 200, // Adjust the height
+              child: Center(
+                child: Text(
+                  'Does your tree have needles or leaves?',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.spaceGrotesk(
+                    color: const Color(0xFF1986A4),
+                    fontSize: 30,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          Positioned(
+            left: width * 0.45,
             top: 400,
             child: Builder(
               builder: (context) => ElevatedButton(
                 onPressed: () {
-                  //Oak tree
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Oak()),
+                    );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 14, 68, 5),
@@ -59,6 +84,7 @@ class NeedlesLeaves extends StatelessWidget {
               ),
             ),
           ),
+
           Positioned(
             left: width * 0.3, // Adjust the left position
             top: height * 0.05, // Adjust the top position
@@ -101,7 +127,6 @@ class NeedlesLeaves extends StatelessWidget {
                     style: GoogleFonts.spaceGrotesk(
                       color: Colors.white,
                       fontSize: 30,
-                      //fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                     ),
                   ),
@@ -109,6 +134,7 @@ class NeedlesLeaves extends StatelessWidget {
               ),
             ),
           ),
+
           Positioned(
             left: width * 0.4,
             top: height * 0.6,
