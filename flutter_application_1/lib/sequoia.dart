@@ -62,10 +62,9 @@ class AndroidLarge12 extends StatelessWidget {
                           child: Text(
                             'Giant Sequoia',
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: GoogleFonts.spaceGrotesk(
                               color: Color(0xFFFFE4C2),
                               fontSize: 30,
-                              fontFamily: 'Space Grotesk',
                               fontWeight: FontWeight.w400,
                               height: 0,
                             ),
@@ -106,13 +105,12 @@ class AndroidLarge12 extends StatelessWidget {
                   ),
                   child: SizedBox(
                     width: 270,
-                    child: const Text(
+                    child: Text(
                       'Return to Main',
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: GoogleFonts.spaceGrotesk(
                         color: Color(0xFFFFE4C2),
                         fontSize: 25,
-                        fontFamily: 'Space Grotesk',
                         fontWeight: FontWeight.w400,
                         height: 0,
                       ),
@@ -129,10 +127,9 @@ class AndroidLarge12 extends StatelessWidget {
                   child: Text(
                     'Is this your tree?',
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: GoogleFonts.spaceGrotesk(
                       color: Color(0xFFBC3124),
                       fontSize: 30,
-                      fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
                     ),
@@ -173,20 +170,18 @@ class AndroidLarge12 extends StatelessWidget {
                               children: [
                                 TextSpan(
                                   text: 'The sequoia is the largest tree on Earth! Your tree likely towers far above you.\nAlso look for:\n',
-                                  style: TextStyle(
+                                  style: GoogleFonts.spaceGrotesk(
                                     color: Color(0xFF3391CC),
                                     fontSize: 18,
-                                    fontFamily: 'Space Grotesk',
                                     fontWeight: FontWeight.w400,
                                     height: 0,
                                   ),
                                 ),
                                 TextSpan(
                                   text: 'Soft red bark that peels from the trunk\nSmall pine cones\nPointy overlapping needles\n',
-                                  style: TextStyle(
+                                  style: GoogleFonts.spaceGrotesk(
                                     color: Color(0xFF3391CC),
                                     fontSize: 18,
-                                    fontFamily: 'Space Grotesk',
                                     fontWeight: FontWeight.w400,
                                     height: 0,
                                   ),
