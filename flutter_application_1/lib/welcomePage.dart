@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/blueORgreen.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -33,15 +34,18 @@ class WelcomePage extends StatelessWidget {
               Positioned(
                 left: 73,
                 top: 245,
-                child: Text(
-                  'Start Plant ID',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Color(0xFFFFE4C2),
-                    fontSize: 30,
-                    fontFamily: 'Sora',
-                    fontWeight: FontWeight.w400,
-                    height: 0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => BlueORGreenPage()),
+                        );
+                  },
+                  child: Text(
+                    'Start',
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               ),

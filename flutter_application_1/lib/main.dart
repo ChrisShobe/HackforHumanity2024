@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'loginPage.dart';
 import 'welcomePage.dart';
+import 'blueORgreen.dart';
 
 void main() {
   runApp(const MyApp());
