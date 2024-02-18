@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'loginPage.dart';
 import 'welcomePage.dart';
 import 'blueORgreen.dart';
+import 'softORpointy.dart';
 
 void main() {
   runApp(const MyApp());

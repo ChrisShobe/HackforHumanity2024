@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/softORpointy.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'bark.dart';
 
@@ -61,7 +62,10 @@ class ScaleNeedlesPage extends StatelessWidget {
                 top: 550,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add your logic here for 'No'
+                    Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SoftOrPointyPage()),
+                        );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF639F32),
@@ -75,7 +79,7 @@ class ScaleNeedlesPage extends StatelessWidget {
                     'No',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 30,
+                      fontSize: 25,
                       fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
