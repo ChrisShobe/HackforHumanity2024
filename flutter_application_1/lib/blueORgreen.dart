@@ -1,47 +1,19 @@
 import 'package:flutter/material.dart';
+import 'scaleNeedles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Blue or Green Page'),
-        ),
-        body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => BlueORGreenPage()),
-              );
-            },
-            child: const Text('Go to Blue or Green Page'),
-          ),
-        ),
-      ),
-    );
-  }
-}
 
 class BlueORGreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Blue or Green'),
+        title: const Text('Color of Berries'),
       ),
       body: Center(
         child: Container(
           width: 367,
-          height: 780,
+          height: 800,
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(color: Colors.white),
           child: Stack(
@@ -60,16 +32,16 @@ class BlueORGreenPage extends StatelessWidget {
                 top: 11,
                 child: Container(
                   width: 345,
-                  height: 635,
+                  height: 779,
                   decoration: BoxDecoration(color: const Color(0xFFFFE4C2)),
                 ),
               ),
               Positioned(
                 left: 37,
-                top: 115,
+                top: 135,
                 child: SizedBox(
                   width: 285,
-                  height: 80,
+                  height: 70,
                   child: Text(
                     'Does it have blue and green berries?',
                     textAlign: TextAlign.center,
@@ -83,23 +55,26 @@ class BlueORGreenPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 135,
+                left: 150,
                 top: 416,
                 height: 50,
                 width: 90,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add onPressed logic for "No" button here
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ScaleNeedlesPage()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF00750B), // Background color
+                    primary: const Color(0xFFBC3124),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    shadowColor: Color(0x3F000000),
+                    shadowColor: const Color(0x3F000000),
                     elevation: 4,
                   ),
-                  child: Text(
+                  child: const Text(
                     'No',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.spaceGrotesk(
@@ -112,35 +87,34 @@ class BlueORGreenPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 135,
+                left: 145,
                 top: 281,
                 height: 50,
                 width: 90,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Add onPressed logic for "Yes" button here
+                    // Add your logic here for 'Yes'
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF00750B), // Background color
+                    primary: const Color(0xFFBC3124),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    shadowColor: Color(0x3F000000),
+                    shadowColor: const Color(0x3F000000),
                     elevation: 4,
                   ),
-                  child: Text(
+                  child: const Text(
                     'Yes',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.spaceGrotesk(
+                    style: TextStyle(
                       color: Colors.black,
-                      fontSize: 25,
+                      fontSize: 30,
+                      fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
                     ),
                   ),
                 ),
               ),
-
               // DOTS --------------------------------------------------
               Positioned(
                 left: 52,
