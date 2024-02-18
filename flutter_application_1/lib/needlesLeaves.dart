@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'blueOrGreen.dart';
+import 'oak.dart';
 
 class NeedlesLeaves extends StatelessWidget {
   @override
@@ -59,7 +60,10 @@ class NeedlesLeaves extends StatelessWidget {
             child: Builder(
               builder: (context) => ElevatedButton(
                 onPressed: () {
-                  //Oak tree
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Oak()),
+                    );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 14, 68, 5),
