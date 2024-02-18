@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/needlesLeaves.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'loginPage.dart';
-import 'welcomePage.dart';
-import 'blueORgreen.dart';
-import 'softORpointy.dart';
+import 'needlesLeaves.dart';
 
 void main() {
   runApp(const MyApp());
@@ -85,7 +84,7 @@ class MyApp extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => BlueORGreenPage()),
+                          MaterialPageRoute(builder: (context) => NeedlesLeaves()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
