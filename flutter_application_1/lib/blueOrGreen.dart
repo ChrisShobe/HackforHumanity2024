@@ -32,7 +32,7 @@ class BlueORGreenPage extends StatelessWidget {
                 top: 11,
                 child: Container(
                   width: 345,
-                  height: 779,
+                  height: 635,
                   decoration: BoxDecoration(color: const Color(0xFFFFE4C2)),
                 ),
               ),
@@ -55,7 +55,7 @@ class BlueORGreenPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 150,
+                left: 135,
                 top: 416,
                 height: 50,
                 width: 90,
@@ -77,17 +77,16 @@ class BlueORGreenPage extends StatelessWidget {
                   child: const Text(
                     'No',
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.spaceGrotesk(
+                    style: TextStyle(
                       color: Colors.black,
                       fontSize: 25,
                       fontWeight: FontWeight.w400,
-                      height: 0,
                     ),
                   ),
                 ),
               ),
               Positioned(
-                left: 145,
+                left: 135,
                 top: 281,
                 height: 50,
                 width: 90,
@@ -107,7 +106,7 @@ class BlueORGreenPage extends StatelessWidget {
                     'Yes',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 30,
+                      fontSize: 25,
                       fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
