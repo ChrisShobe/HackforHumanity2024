@@ -38,18 +38,20 @@ class ScaleNeedlesPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 25,
-                top: 135,
-                child: SizedBox(
-                  width: 320,
-                  height: 70,
-                  child: Text(
-                    'Are the needles short and layered like scales?',
-                    style: GoogleFonts.spaceGrotesk(
-                      color: const Color(0xFF639F32),
-                      fontSize: 30,
-                      fontWeight: FontWeight.w400,
-                      height: 0,
+                left: 37,
+                top: 115,
+                child: Center(
+                  child: SizedBox(
+                    width: 285,
+                    height: 150,
+                    child: Text(
+                      'Are the needles short and layered like scales?',
+                      style: GoogleFonts.spaceGrotesk(
+                        color: const Color(0xFF639F32),
+                        fontSize: 30,
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                      ),
                     ),
                   ),
                 ),
