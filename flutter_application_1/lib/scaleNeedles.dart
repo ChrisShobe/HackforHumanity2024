@@ -44,9 +44,10 @@ class ScaleNeedlesPage extends StatelessWidget {
                   height: 70,
                   child: Text(
                     'Are the needles short and layered like scales?',
-                    style: GoogleFonts.spaceGrotesk(
+                    style: TextStyle(
                       color: Color(0xFF639F32),
                       fontSize: 30,
+                      fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
                     ),
@@ -99,7 +100,7 @@ class ScaleNeedlesPage extends StatelessWidget {
                     'Yes',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 30,
+                      fontSize: 25,
                       fontFamily: 'Space Grotesk',
                       fontWeight: FontWeight.w400,
                       height: 0,
